@@ -240,6 +240,7 @@ RUN conda install --yes \
 RUN pip install --upgrade pip
 RUN pip install numpy scikit-learn pyglet setuptools \
 	gym asciinema pandas
+RUN pip install git+https://github.com/JKCooper2/gym-bandits#egg=gym-bandits
 
 USER root
 
