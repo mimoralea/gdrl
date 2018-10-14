@@ -4,5 +4,5 @@
 
 ## Running the code
   1. Pull the gdrl image with: `docker pull mimoralea/gdrl:v0.4`
-  2. Spin up a container: `docker run -it --rm -p 8888:8888 -p 6006:6006 -v $PWD:/mnt/notebooks/ mimoralea/gdrl:v0.2`
+  2. Spin up a container: `docker run -it --rm -p 8888:8888 -p 6006:6006 -v $PWD:/mnt/notebooks/ mimoralea/gdrl:v0.4`
   3. Open a browser and go to the URL shown in the console
