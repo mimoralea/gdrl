@@ -227,7 +227,7 @@ RUN conda install --yes \
   # install necessary packages
 RUN pip install --upgrade pip && \
   pip install numpy scikit-learn pyglet setuptools \
-  gym asciinema pandas
+  gym asciinema pandas tqdm
 RUN pip install git+https://github.com/JKCooper2/gym-bandits#egg=gym-bandits
 
   # create a script to start the notebook with xvfb on the back
