@@ -18,6 +18,7 @@ RUN apt-get update && \
   flex \
   fluidsynth \
   fonts-liberation \
+  gifsicle \
   git \
   imagemagick \
   inkscape \
@@ -118,11 +119,11 @@ RUN conda install --quiet --yes 'tini=0.18.0' && \
  # Do all this in a single RUN command to avoid duplicating all of the
  # files across image layers when the permissions change
 RUN conda install --quiet --yes \
-  'notebook=5.6.*' \
-  'jupyterhub=0.9.*' \
-  'jupyterlab=0.34.*' && \
+  'notebook=5.7.2' \
+  'jupyterhub=0.9.2' \
+  'jupyterlab=0.35.4' && \
   conda clean -tipsy && \
-  jupyter labextension install @jupyterlab/hub-extension@^0.11.0 && \
+  jupyter labextension install @jupyterlab/hub-extension@^0.12.0 && \
   npm cache clean --force && \
   jupyter notebook --generate-config && \
   rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
@@ -153,7 +154,7 @@ USER $NB_UID
 RUN conda install --quiet --yes \
   'conda-forge::blas=*=openblas' \
   'beautifulsoup4=4.6.*' \
-  'bokeh=0.12*' \
+  'bokeh=0.13*' \
   'cloudpickle=0.5*' \
   'cython=0.28*' \
   'dill=0.2*' \
@@ -180,14 +181,17 @@ RUN conda install --quiet --yes \
   # Activate ipywidgets extension in the environment that runs the notebook server
   jupyter nbextension enable --py widgetsnbextension --sys-prefix && \
   # Also activate ipywidgets extension for JupyterLab
-  jupyter labextension install @jupyter-widgets/jupyterlab-manager@^0.37.0 && \
-  jupyter labextension install jupyterlab_bokeh@^0.6.0 && \
+  jupyter labextension install @jupyter-widgets/jupyterlab-manager@^0.38.1 && \
+  jupyter labextension install jupyterlab_bokeh@0.6.3 && \
   npm cache clean --force && \
   rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
   rm -rf /home/$NB_USER/.cache/yarn && \
   rm -rf /home/$NB_USER/.node-gyp && \
   fix-permissions $CONDA_DIR && \
   fix-permissions /home/$NB_USER
+
+RUN npm i -g npm && \
+  npm i -g asciicast2gif
 
   # Install facets which does not have a pip or conda package at the moment
 RUN cd /tmp && \
@@ -229,11 +233,13 @@ RUN pip install --upgrade pip && \
   pip install numpy scikit-learn pyglet setuptools \
   gym asciinema pandas tqdm
 RUN pip install git+https://github.com/JKCooper2/gym-bandits#egg=gym-bandits
+RUN pip install git+https://github.com/pybox2d/pybox2d#egg=Box2D
 
   # create a script to start the notebook with xvfb on the back
   # this allows screen display to work well
 RUN echo '#!/bin/bash' > /tmp/run.sh && \
   echo "nohup sh -c 'tensorboard --logdir=/mnt/notebooks/logs' > /dev/null 2>&1 &" >> /tmp/run.sh && \
+  echo 'find /mnt/notebooks/ -name "*.ipynb" -exec jupyter trust {} \;' >> /tmp/run.sh && \
   echo 'xvfb-run -s "-screen 0 1280x720x24" /usr/local/bin/start-notebook.sh' >> /tmp/run.sh && \
   chmod +x /tmp/run.sh
 
