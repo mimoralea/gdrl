@@ -225,7 +225,7 @@ EXPOSE 6006
   # switch back to user
 USER $NB_USER
 
-RUN conda install --yes \
+RUN conda install --yes --quiet \
   pytorch torchvision -c pytorch
 
   # install necessary packages
