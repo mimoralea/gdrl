@@ -6,5 +6,5 @@ To install docker, I recommend a web search for "installing docker on \<your os 
 
 ## Running the code
   1. Pull the gdrl image with: `docker pull mimoralea/gdrl:v0.7`
-  2. Spin up a container: `docker run -it --rm -p 8888:8888 -p 6006:6006 -v $PWD:/mnt/notebooks/ mimoralea/gdrl:v0.7` (remember to use `nvidia-docker` if you are using a GPU.)
+  2. Spin up a container: `docker run -it --rm -p 8888:8888 -v "$PWD"/notebooks/:/mnt/notebooks/ mimoralea/gdrl:v0.7` (remember to use `nvidia-docker` if you are using a GPU.)
   3. Open a browser and go to the URL shown in the terminal (likely to be: http://localhost:8888). The password is: `gdrl`
