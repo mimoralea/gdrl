@@ -231,7 +231,7 @@ RUN conda install --yes --quiet \
   # install necessary packages
 RUN pip install --upgrade pip && \
   pip install numpy scikit-learn pyglet setuptools \
-  gym asciinema pandas tqdm
+  gym tqdm asciinema pandas
 RUN pip install git+https://github.com/mimoralea/gym-bandits#egg=gym-bandits
 RUN pip install git+https://github.com/pybox2d/pybox2d#egg=Box2D
 
