@@ -230,10 +230,12 @@ RUN conda install --yes --quiet \
 
   # install necessary packages
 RUN pip install --upgrade pip && \
-  pip install numpy scikit-learn pyglet setuptools \
-  gym tqdm asciinema pandas
-RUN pip install git+https://github.com/mimoralea/gym-bandits#egg=gym-bandits
-RUN pip install git+https://github.com/pybox2d/pybox2d#egg=Box2D
+  pip install numpy scikit-learn pyglet setuptools tqdm \
+  gym asciinema pandas tabulate tornado==5.*
+RUN pip install git+https://github.com/mimoralea/gym-bandits#egg=gym-bandits && \
+  pip install git+https://github.com/mimoralea/gym-walk#egg=gym-walk && \
+  pip install git+https://github.com/mimoralea/gym-aima#egg=gym-aima && \
+  pip install git+https://github.com/pybox2d/pybox2d#egg=Box2D
 
   # create a script to start the notebook with xvfb on the back
   # this allows screen display to work well
