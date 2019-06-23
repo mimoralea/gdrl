@@ -230,7 +230,7 @@ RUN conda install --yes --quiet \
 
   # install necessary packages
 RUN pip install --upgrade pip && \
-  pip install numpy scikit-learn pyglet setuptools tqdm \
+  pip install tqdm numpy scikit-learn pyglet setuptools \
   gym asciinema pandas tabulate tornado==5.*
 RUN pip install git+https://github.com/mimoralea/gym-bandits#egg=gym-bandits && \
   pip install git+https://github.com/mimoralea/gym-walk#egg=gym-walk && \
