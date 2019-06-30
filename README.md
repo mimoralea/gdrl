@@ -15,7 +15,7 @@ To install docker, I recommend a web search for "installing docker on \<your os 
 
 https://www.manning.com/books/grokking-deep-reinforcement-learning
 
-### Brief Table of content
+### Table of content
 
   1. Introduction to deep reinforcement learning
   2. [Mathematical foundations of reinforcement learning](/notebooks/chapter_02/chapter-02.ipynb)
@@ -33,7 +33,7 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
   14. Conservative policy optimization methods
   15. Towards artificial general intelligence
 
-### Full Table of content
+### Table of content with implementation details
 
   1. Introduction to deep reinforcement learning
   2. [Mathematical foundations of reinforcement learning](/notebooks/chapter_02/chapter-02.ipynb)
