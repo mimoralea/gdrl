@@ -21,8 +21,8 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
   2. [Mathematical foundations of reinforcement learning](/notebooks/chapter_02/chapter-02.ipynb)
   3. [Balancing immediate and long-term goals](/notebooks/chapter_03/chapter-03.ipynb)
   4. [Balancing the gathering and utilization of information](/notebooks/chapter_04/chapter-04.ipynb)
-  5. [Estimating agents’ behaviors](/notebooks/chapter_05/chapter-05.ipynb)
-  6. [Improving agents’ behaviors](/notebooks/chapter_06/chapter-06.ipynb)
+  5. [Estimating agents' behaviors](/notebooks/chapter_05/chapter-05.ipynb)
+  6. [Improving agents' behaviors](/notebooks/chapter_06/chapter-06.ipynb)
   7. [Achieving goals more effectively and efficiently](/notebooks/chapter_07/chapter-07.ipynb)
   8. [Introduction to value-based deep reinforcement learning](/notebooks/chapter_08/chapter-08.ipynb)
   9. [More stable value-based methods](/notebooks/chapter_09/chapter-09.ipynb)
@@ -62,13 +62,13 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
           - SoftMax
           - Upper Confidence Bound
           - Bayesian
-  5. [Estimating agents’ behaviors](/notebooks/chapter_05/chapter-05.ipynb)
+  5. [Estimating agents' behaviors](/notebooks/chapter_05/chapter-05.ipynb)
       - Implementation of algorithms that solve the prediction problem (policy estimation):
           - On-policy Monte-Carlo prediction
           - Temporal-Difference prediction (TD)
           - n-step Temporal-Difference prediction (n-step TD)
           - TD(λ)
-  6. [Improving agents’ behaviors](/notebooks/chapter_06/chapter-06.ipynb)
+  6. [Improving agents' behaviors](/notebooks/chapter_06/chapter-06.ipynb)
       - Implementation of algorithms that solve the control problem (policy improvement):
           - On-policy first-visit Monte-Carlo control
           - On-policy TD control: SARSA
