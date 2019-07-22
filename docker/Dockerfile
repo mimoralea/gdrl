@@ -228,14 +228,15 @@ USER $NB_USER
 RUN conda install --yes --quiet \
   pytorch torchvision -c pytorch
 
-  # install necessary packages
+# install necessary packages
 RUN pip install --upgrade pip && \
-  pip install tqdm numpy scikit-learn pyglet setuptools \
-  gym asciinema pandas tabulate tornado==5.*
+  pip install tqdm numpy scikit-learn pyglet setuptools && \
+  pip install gym asciinema pandas tabulate tornado==5.*
+
+RUN pip install git+https://github.com/pybox2d/pybox2d#egg=Box2D
 RUN pip install git+https://github.com/mimoralea/gym-bandits#egg=gym-bandits && \
   pip install git+https://github.com/mimoralea/gym-walk#egg=gym-walk && \
-  pip install git+https://github.com/mimoralea/gym-aima#egg=gym-aima && \
-  pip install git+https://github.com/pybox2d/pybox2d#egg=Box2D
+  pip install git+https://github.com/mimoralea/gym-aima#egg=gym-aima
 
   # create a script to start the notebook with xvfb on the back
   # this allows screen display to work well
