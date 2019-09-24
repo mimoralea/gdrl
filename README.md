@@ -65,21 +65,26 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
           - Bayesian
   5. [Estimating agents' behaviors](/notebooks/chapter_05/chapter-05.ipynb)
       - Implementation of algorithms that solve the prediction problem (policy estimation):
-          - On-policy Monte-Carlo prediction
+          - On-policy first-visit Monte-Carlo prediction
+          - On-policy every-visit Monte-Carlo prediction
           - Temporal-Difference prediction (TD)
           - n-step Temporal-Difference prediction (n-step TD)
           - TD(λ)
   6. [Improving agents' behaviors](/notebooks/chapter_06/chapter-06.ipynb)
       - Implementation of algorithms that solve the control problem (policy improvement):
           - On-policy first-visit Monte-Carlo control
+          - On-policy every-visit Monte-Carlo control
           - On-policy TD control: SARSA
           - Off-policy TD control: Q-Learning
+          - Double Q-Learning
   7. [Achieving goals more effectively and efficiently](/notebooks/chapter_07/chapter-07.ipynb)
       - Implementation of more effective and efficient reinforcement learning algorithms:
-          - Double Q-Learning
-          - SARSA(λ)
-          - Q(λ)
-          - Dyna-Q (model-based method)
+          - SARSA(λ) with replacing traces
+          - SARSA(λ) with accumulating traces
+          - Q(λ) with replacing traces
+          - Q(λ) with accumulating traces
+          - Dyna-Q
+          - Trajectory Sampling
   8. [Introduction to value-based deep reinforcement learning](/notebooks/chapter_08/chapter-08.ipynb)
       - Implementation of a value-based deep reinforcement learning baseline:
           - Neural Fitted Q-iteration (NFQ)
