@@ -63,7 +63,7 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
           - SoftMax
           - Upper Confidence Bound
           - Bayesian
-  5. [Estimating agents' behaviors](/notebooks/chapter_05/chapter-05.ipynb)
+  5. [Evaluating agents' behaviors](/notebooks/chapter_05/chapter-05.ipynb)
       - Implementation of algorithms that solve the prediction problem (policy estimation):
           - On-policy first-visit Monte-Carlo prediction
           - On-policy every-visit Monte-Carlo prediction
