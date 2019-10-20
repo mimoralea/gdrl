@@ -18,7 +18,7 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
 
 ### Table of content
 
-  1. Introduction to deep reinforcement learning
+  1. [Introduction to deep reinforcement learning](#1.-introduction-to-deep-reinforcement-learning)
   2. Mathematical foundations of reinforcement learning
   3. Balancing immediate and long-term goals
   4. Balancing the gathering and utilization of information \([Notebook](/notebooks/chapter_04/chapter-04.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-4)\)
@@ -36,7 +36,7 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
 
 ### Table of content with implementation details
 
-####  1. Introduction to deep reinforcement learning
+#### 1. Introduction to deep reinforcement learning
       - \(No Notebook\)
       - \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-1)\)
 ####  2. [Mathematical foundations of reinforcement learning](/notebooks/chapter_02/chapter-02.ipynb)
