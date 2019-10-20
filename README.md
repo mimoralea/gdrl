@@ -5,7 +5,7 @@
 To install docker, I recommend a web search for "installing docker on \<your os here>". For running the code on a GPU, you have to additionally install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker). NVIDIA Docker allows for using a host's GPUs inside docker containers. After you have docker (and nvidia-docker if using a GPU) installed, follow the three steps below. 
 
 ## Running the code
-  0. Get this repo: `git clone --depth 1 https://github.com/mimoralea/gdrl.git && cd gdrl`
+  0. Clone this repo: `git clone --depth 1 https://github.com/mimoralea/gdrl.git && cd gdrl`
   1. Pull the gdrl image with: `docker pull mimoralea/gdrl:v0.12`
   2. Spin up a container: `docker run -it --rm -p 8888:8888 -v "$PWD"/notebooks/:/mnt/notebooks/ mimoralea/gdrl:v0.12` (remember to use `nvidia-docker` if you are using a GPU.)
   3. Open a browser and go to the URL shown in the terminal (likely to be: http://localhost:8888). The password is: `gdrl`
@@ -22,19 +22,19 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
   2. [Mathematical foundations of reinforcement learning](#2-mathematical-foundations-of-reinforcement-learning)
   3. [Balancing immediate and long-term goals](#3-balancing-immediate-and-long-term-goals)
   4. [Balancing the gathering and utilization of information](#4-balancing-the-gathering-and-utilization-of-information)
-  5. Evaluating agents' behaviors
-  6. Improving agents' behaviors
-  7. Achieving goals more effectively and efficiently
-  8. Introduction to value-based deep reinforcement learning \([Notebook](/notebooks/chapter_08/chapter-08.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-8)\)
-  9. More stable value-based methods \([Notebook](/notebooks/chapter_09/chapter-09.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-9)\)
-  10. Sample-efficient value-based methods \([Notebook](/notebooks/chapter_10/chapter-10.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-10)\)
-  11. Introduction to policy-based deep reinforcement learning
-  12. Parallelizing policy-based methods
-  13. Deterministic policy gradient methods
-  14. Conservative policy optimization methods
-  15. Towards artificial general intelligence
+  5. [Evaluating agents' behaviors](#5-evaluating-agents-behaviors)
+  6. [Improving agents' behaviors](#6-improving-agents-behaviors)
+  7. [Achieving goals more effectively and efficiently](#7-achieving-goals-more-effectively-and-efficiently)
+  8. [Introduction to value-based deep reinforcement learning](#8-introduction-to-value-based-deep-reinforcement-learning)
+  9. [More stable value-based methods](#9-more-stable-value-based-methods)
+  10. [Sample-efficient value-based methods](#10-sample-efficient-value-based-methods)
+  11. [Introduction to policy-based deep reinforcement learning](#11-introduction-to-policy-based-deep-reinforcement-learning)
+  12. [Parallelizing policy-based methods](#12-parallelizing-policy-based-methods)
+  13. [Deterministic policy gradient methods](#13-deterministic-policy-gradient-methods)
+  14. [Conservative policy optimization methods](#14-conservative-policy-optimization-methods)
+  15. [Towards artificial general intelligence](#15-towards-artificial-general-intelligence)
 
-### Table of content with implementation details
+### Detailed table of content
 
 #### 1. Introduction to deep reinforcement learning
 - \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-1)\)
