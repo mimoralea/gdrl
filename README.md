@@ -20,14 +20,14 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
 
   1. Introduction to deep reinforcement learning \(No Notebook\)\([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-1)\)
   2. Mathematical foundations of reinforcement learning \([Notebook](/notebooks/chapter_02/chapter-02.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-2)\)
-  3. [Balancing immediate and long-term goals](/notebooks/chapter_03/chapter-03.ipynb) [Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-3)
-  4. [Balancing the gathering and utilization of information](/notebooks/chapter_04/chapter-04.ipynb) [Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-4)
-  5. [Evaluating agents' behaviors](/notebooks/chapter_05/chapter-05.ipynb) [Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-5)
-  6. [Improving agents' behaviors](/notebooks/chapter_06/chapter-06.ipynb) [Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-6)
-  7. [Achieving goals more effectively and efficiently](/notebooks/chapter_07/chapter-07.ipynb) [Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-7)
-  8. [Introduction to value-based deep reinforcement learning](/notebooks/chapter_08/chapter-08.ipynb) [Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-8)
-  9. [More stable value-based methods](/notebooks/chapter_09/chapter-09.ipynb) [Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-9)
-  10. [Sample-efficient value-based methods](/notebooks/chapter_10/chapter-10.ipynb) [Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-10)
+  3. Balancing immediate and long-term goals \([Notebook](/notebooks/chapter_03/chapter-03.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-3)\)
+  4. Balancing the gathering and utilization of information \([Notebook](/notebooks/chapter_04/chapter-04.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-4)\)
+  5. Evaluating agents' behaviors \([Notebook](/notebooks/chapter_05/chapter-05.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-5)\)
+  6. Improving agents' behaviors \([Notebook](/notebooks/chapter_06/chapter-06.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-6)\)
+  7. Achieving goals more effectively and efficiently \([Notebook](/notebooks/chapter_07/chapter-07.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-7)\)
+  8. Introduction to value-based deep reinforcement learning \([Notebook](/notebooks/chapter_08/chapter-08.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-8)\)
+  9. More stable value-based methods \([Notebook](/notebooks/chapter_09/chapter-09.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-9)\)
+  10. Sample-efficient value-based methods \([Notebook](/notebooks/chapter_10/chapter-10.ipynb)\) \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-10)\)
   11. Introduction to policy-based deep reinforcement learning
   12. Parallelizing policy-based methods
   13. Deterministic policy gradient methods
