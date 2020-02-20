@@ -6,6 +6,6 @@
   1. Pull the gdrl image with: `docker pull mimoralea/gdrl:v0.5`
   2. Spin up a container: `docker run -it --rm -p 8888:8888 -p 6006:6006 -v $PWD:/mnt/notebooks/ mimoralea/gdrl:v0.5` (remember to use `nvidia-docker` if you are using a GPU.)
   
-    On windows: `docker run -it --rm -p 8888:8888 -v %cd%/notebooks/:/mnt/notebooks/ mimoralea/gdrl:v0.14`
+  On windows: `docker run -it --rm -p 8888:8888 -v %cd%/notebooks/:/mnt/notebooks/ mimoralea/gdrl:v0.14`
  
   3. Open a browser and go to the URL shown in the console
