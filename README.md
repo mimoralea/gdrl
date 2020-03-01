@@ -10,8 +10,7 @@ To install docker, I recommend a web search for "installing docker on \<your os 
   2. Spin up a container:
    - On Mac or Linux: `docker run -it --rm -p 8888:8888 -v "$PWD"/notebooks/:/mnt/notebooks/ mimoralea/gdrl:v0.14` 
    - On Windows: `docker run -it --rm -p 8888:8888 -v %cd%/notebooks/:/mnt/notebooks/ mimoralea/gdrl:v0.14`
-   - remember to use `nvidia-docker` if you are using a GPU.
-  
+   - NOTE: Use `nvidia-docker` if you are using a GPU.
   3. Open a browser and go to the URL shown in the terminal (likely to be: http://localhost:8888). The password is: `gdrl`
 
 ## About the book
