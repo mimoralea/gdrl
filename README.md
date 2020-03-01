@@ -5,8 +5,10 @@
 To install docker, I recommend a web search for "installing docker on \<your os here>". For running the code on a GPU, you have to additionally install [nvidia-docker](https://github.com/NVIDIA/nvidia-docker). NVIDIA Docker allows for using a host's GPUs inside docker containers. After you have docker (and nvidia-docker if using a GPU) installed, follow the three steps below. 
 
 ## Running the code
-  0. Clone this repo: `git clone --depth 1 https://github.com/mimoralea/gdrl.git && cd gdrl`
-  1. Pull the gdrl image with: `docker pull mimoralea/gdrl:v0.14`
+  0. Clone this repo:  
+  `git clone --depth 1 https://github.com/mimoralea/gdrl.git && cd gdrl`
+  1. Pull the gdrl image with:  
+  `docker pull mimoralea/gdrl:v0.14`
   2. Spin up a container:
      - On Mac or Linux:  
      `docker run -it --rm -p 8888:8888 -v "$PWD"/notebooks/:/mnt/notebooks/ mimoralea/gdrl:v0.14` 
