@@ -32,11 +32,9 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
   8. [Introduction to value-based deep reinforcement learning](#8-introduction-to-value-based-deep-reinforcement-learning)
   9. [More stable value-based methods](#9-more-stable-value-based-methods)
   10. [Sample-efficient value-based methods](#10-sample-efficient-value-based-methods)
-  11. [Introduction to policy-based deep reinforcement learning](#11-introduction-to-policy-based-deep-reinforcement-learning)
-  12. [Parallelizing policy-based methods](#12-parallelizing-policy-based-methods)
-  13. [Deterministic policy gradient methods](#13-deterministic-policy-gradient-methods)
-  14. [Conservative policy optimization methods](#14-conservative-policy-optimization-methods)
-  15. [Towards artificial general intelligence](#15-towards-artificial-general-intelligence)
+  11. [Policy-gradient and actor-critic methods](#11-policy-gradient-and-actor-critic-methods)
+  12. [Advanced actor-critic methods](#12-advanced-actor-critic-methods)
+  13. [Towards artificial general intelligence](#13-towards-artificial-general-intelligence)
 
 ### Detailed table of content
 
@@ -121,31 +119,23 @@ https://www.manning.com/books/grokking-deep-reinforcement-learning
   - Implementation of main improvements for value-based deep reinforcement learning methods:
     - Dueling Deep Q-Networks (Dueling DQN)
     - Prioritized Experience Replay (PER)
-#### 11. Introduction to policy-based deep reinforcement learning
-- \(No Livebook yet\)
-- \(No Notebook yet\)
-  - Implementation of classic policy-based deep reinforcement learning methods:
+#### 11. Policy-gradient and actor-critic methods
+- \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-11)\)
+- \([Notebook](/notebooks/chapter_11/chapter-11.ipynb)\)
+  - Implementation of classic policy-based and actor-critic deep reinforcement learning methods:
     - Policy Gradients without value function and Monte-Carlo returns (REINFORCE)
     - Policy Gradients with value function baseline trained with Monte-Carlo returns (VPG)  
-#### 12. Parallelizing policy-based methods
-- \(No Livebook yet\)
-- \(No Notebook yet\)
-  - Implementation of main improvements to policy-based deep reinforcement learning methods:
     - Asynchronous Advantage Actor-Critic (A3C)
     - Generalized Advantage Estimation (GAE)
     - \[Synchronous\] Advantage Actor-Critic (A2C)
-#### 13. Deterministic policy gradient methods
-- \(No Livebook yet\)
-- \(No Notebook yet\)
-  - Implementation of deterministic policy gradient deep reinforcement learning methods:
+#### 12. Advanced actor-critic methods
+- \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-12)\)
+- \([Notebook](/notebooks/chapter_12/chapter-12.ipynb)\)
+  - Implementation of advanced actor-critic methods:
     - Deep Deterministic Policy Gradient (DDPG)
     - Twin Delayed Deep Deterministic Policy Gradient (TD3)
-#### 14. Conservative policy optimization methods
-- \(No Livebook yet\)
-- \(No Notebook yet\)
-  - Implementation of conservative policy gradient deep reinforcement learning methods:
-    - Trust Region Policy Optimization (TRPO)
+    - Soft Actor-Critic (SAC)
     - Proximal Policy Optimization (PPO)
-#### 15. Towards artificial general intelligence
-- \(No Livebook yet\)
+#### 13. Towards artificial general intelligence
+- \([Livebook](https://livebook.manning.com/book/grokking-deep-reinforcement-learning/chapter-13)\)
 - \(No Notebook\)
