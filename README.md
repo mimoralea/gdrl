@@ -14,7 +14,7 @@ To install docker, I recommend a web search for "installing docker on \<your os 
      `docker run -it --rm -p 8888:8888 -v "$PWD"/notebooks/:/mnt/notebooks/ mimoralea/gdrl:v0.14` 
      - On Windows:  
      `docker run -it --rm -p 8888:8888 -v %CD%/notebooks/:/mnt/notebooks/ mimoralea/gdrl:v0.14`
-     - NOTE: Use `nvidia-docker` if you are using a GPU.
+     - NOTE: Use `nvidia-docker` or add `--gpus all` after `--rm` to the command, if you are using a GPU.
   3. Open a browser and go to the URL shown in the terminal (likely to be: http://localhost:8888). The password is: `gdrl`
 
 ## About the book
